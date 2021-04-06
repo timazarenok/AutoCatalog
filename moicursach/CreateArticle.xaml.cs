@@ -94,6 +94,7 @@ namespace moicursach
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             mw.OpenPage(MainWindow.Pages.main);
+            mw.login = mw.login;
         }
     }
 }

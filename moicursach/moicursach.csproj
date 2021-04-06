@@ -76,9 +76,6 @@
     <Compile Include="Models\AutoBrands.cs" />
     <Compile Include="Models\AutoPrivods.cs" />
     <Compile Include="Models\AutoTypes.cs" />
-    <Compile Include="ArticleShow.xaml.cs">
-      <DependentUpon>ArticleShow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="AdminPages\Oils.xaml.cs">
       <DependentUpon>Oils.xaml</DependentUpon>
     </Compile>
@@ -121,10 +118,6 @@
     <Page Include="CreateArticle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ArticleShow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="AdminPages\Oils.xaml">
       <SubType>Designer</SubType>

@@ -39,23 +39,16 @@ id int IDENTITY(1,1) primary key,
 [name] varchar(30)
 )
 
-create table Automobiles (
+create table Articles (
 id int IDENTITY(1,1) primary key,
+iduser int references Users(id) on delete cascade,
 idtype int references AutoTypes(id) on delete cascade,
 idoiltype int references AutoOils(id) on delete cascade,
 idbrand int references AutoBrands(id) on delete cascade,
 idprivod int references AutoPrivods(id) on delete cascade,
 idkpp int references KPPTypes(id) on delete cascade,
 idbody int references TypeBodies(id) on delete cascade,
-[year] int
-)
-
-insert into Automobiles values (1,1,1,1,1,1, 2010)
-
-create table Articles (
-id int IDENTITY(1,1) primary key,
-idauto int references Automobiles(id) on delete cascade,
-iduser int references Users(id) on delete cascade,
+[year] int,
 [name] varchar(50),
 [description] varchar(300),
 price decimal(10,2)

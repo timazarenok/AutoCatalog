@@ -23,7 +23,7 @@ namespace moicursach
     /// </summary>
     public partial class MainWindow : Window
     {
-        public string connectionString = @"Server=localhost\TEW_SQLEXPRESS;Database=AutoCatalog;Trusted_Connection=True;";
+        public string connectionString = @"Server=DESKTOP-VLADISL;Database=AutoCatalog;Trusted_Connection=True;";
         public string login { get; set; }
         public MainWindow()
         {

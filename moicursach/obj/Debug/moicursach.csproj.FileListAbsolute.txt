@@ -99,3 +99,41 @@ C:\Users\Даник\Desktop\Cursach\moicursach\obj\Debug\ArticleShow.baml
 C:\Users\Даник\Desktop\Cursach\moicursach\obj\Debug\CreateArticle.g.cs
 C:\Users\Даник\Desktop\Cursach\moicursach\obj\Debug\CreateArticle.baml
 C:\Users\Даник\Desktop\Cursach\moicursach\obj\Debug\moicursach.csprojAssemblyReference.cache
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\bin\Debug\moicursach.exe.config
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\bin\Debug\moicursach.exe
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\bin\Debug\moicursach.pdb
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\Bodies.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\Brands.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\KPP.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\Privods.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\AdminPage.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\CreateArticle.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\ArticleShow.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\Oils.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\LoginPage.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\Main.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\MainWindow.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\Types.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\RegistrationPage.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\App.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\moicursach_MarkupCompile.cache
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\moicursach_MarkupCompile.lref
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\Bodies.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\Brands.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\KPP.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\Privods.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\AdminPage.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\CreateArticle.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\ArticleShow.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\Oils.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\LoginPage.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\Main.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\MainWindow.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\AdminPages\Types.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\RegistrationPage.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\moicursach.g.resources
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\moicursach.Properties.Resources.resources
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\moicursach.csproj.GenerateResource.cache
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\moicursach.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\moicursach.exe
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\moicursach.pdb

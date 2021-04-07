@@ -22,6 +22,7 @@ namespace moicursach
     public partial class Main : Page
     {
         public MainWindow mainWindow;
+        public int Id { get; set; }
         public Main(MainWindow _mainWindow)
         {
             InitializeComponent();
@@ -54,6 +55,7 @@ namespace moicursach
         {
             Items.SelectedItem = sender;
             int id = (Items.SelectedItem as Article).ID;
+            Id = id;
             try
             {
                 Article article = GetInfo(id);
@@ -96,9 +98,12 @@ namespace moicursach
             return article;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Order_Click(object sender, RoutedEventArgs e)
         {
-            
+            Order order = new Order();
+            order.IDArticle = Id;
+            order.UserID = mainWindow.GetUserId();
+            order.Show();
         }
     }
 }

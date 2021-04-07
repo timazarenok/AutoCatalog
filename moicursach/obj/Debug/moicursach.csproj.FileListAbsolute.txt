@@ -136,3 +136,5 @@ C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debu
 C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\moicursach.exe
 C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\moicursach.pdb
 C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\moicursach.csprojAssemblyReference.cache
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\Order.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\AutoCatalog\moicursach\obj\Debug\Order.baml

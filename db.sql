@@ -1,4 +1,4 @@
---create database [AutoCatalog];
+	--create database [AutoCatalog];
 --use master;
 --drop database AutoCatalog;
 use AutoCatalog;
@@ -54,4 +54,12 @@ idbody int references TypeBodies(id) on delete cascade,
 price decimal(10,2)
 )
 
+create table Orders (
+id int IDENTITY(1,1) primary key,
+iduser int references Users(id) on delete cascade,
+idarticle int references Articles(id),
+price decimal(10,2)
+)
+
+select * from Orders;
 insert into Articles values (1,1,'Продажа','gkjnjrnigrnijgrgrrggrgrrggrgr', 500.00)

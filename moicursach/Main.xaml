@@ -32,7 +32,14 @@
                 </ListBox.ItemTemplate>
         </ListBox>
         <Label x:Name="Name" VerticalAlignment="Top" FontWeight="Bold" Margin="370, 50, 0, 0" Width="100" Height="30"/>
-        <TextBlock x:Name="Description" VerticalAlignment="Top" Margin="370, 100, 0, 0" Width="300" Height="150"/>
-        <Label x:Name="Price" VerticalAlignment="Top" FontWeight="Bold" Margin="200, 270, 0, 0" Width="100" Height="30"/>
+        <TextBlock x:Name="Description" VerticalAlignment="Top" Margin="370, 100, 0, 0" Width="300" Height="120"/>
+        <Label VerticalAlignment="Top" FontWeight="Bold" Margin="370, 220, 0, 0" Width="130" Height="30">Характеристики</Label>
+        <Label x:Name="Body" VerticalAlignment="Top" FontWeight="Bold" Margin="200, 270, 0, 0" Width="120" Height="30"/>
+        <Label x:Name="Privod" VerticalAlignment="Top" FontWeight="Bold" Margin="200, 310, 0, 0" Width="120" Height="30"/>
+        <Label x:Name="Type" VerticalAlignment="Top" FontWeight="Bold" Margin="200, 350, 0, 0" Width="120" Height="30"/>
+        <Label x:Name="Oil" VerticalAlignment="Top" FontWeight="Bold" Margin="500, 270, 0, 0" Width="120" Height="30"/>
+        <Label x:Name="Brand" VerticalAlignment="Top" FontWeight="Bold" Margin="500, 310, 0, 0" Width="120" Height="30"/>
+        <Label x:Name="Kpp" VerticalAlignment="Top" FontWeight="Bold" Margin="500, 350, 0, 0" Width="120" Height="30"/>
+        <Label x:Name="Price" VerticalAlignment="Top" FontWeight="Bold" Margin="200, 390, 0, 0" Width="120" Height="30"/>
     </Grid>
 </Page>

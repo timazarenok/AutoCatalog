@@ -60,6 +60,12 @@ namespace moicursach
                 Name.Content = article.Name;
                 Description.Text = article.Description;
                 Price.Content = article.Price;
+                Type.Content = article.Type;
+                Oil.Content = article.Oil;
+                Brand.Content = article.Brand;
+                Privod.Content = article.Privod;
+                Kpp.Content = article.Kpp;
+                Body.Content = article.Body;
             }
             catch
             {
@@ -70,10 +76,22 @@ namespace moicursach
         private Article GetInfo(int id)
         {
             Article article = new Article();
-            DataTable articles = mainWindow.Select($"select id, Articles.[name], [description], [price] from Articles where id={id}");
+            DataTable articles = mainWindow.Select($"select Articles.id, Articles.[name], [description], [price], [year], " +
+                $"AutoTypes.[name] as [type], AutoOils.[name] as [oil], AutoBrands.[name] as [brand], " +
+                $"AutoPrivods.[name] as [privod], KPPTypes.[name] as [kpp], TypeBodies.[name] as [body] from Articles " +
+                $"join AutoTypes on AutoTypes.id = idtype " +
+                $"join AutoOils on AutoOils.id = idoiltype " +
+                $"join AutoBrands on AutoBrands.id = idbrand " +
+                $"join AutoPrivods on AutoPrivods.id = idprivod " +
+                $"join KPPTypes on KPPTypes.id = idkpp " +
+                $"join TypeBodies on TypeBodies.id = idbody where Articles.id={id}");
             foreach (DataRow dr in articles.Rows)
             {
-                article = new Article() { ID = Convert.ToInt32(dr["id"]), Name = dr["name"].ToString(), Description = dr["description"].ToString(), Price = dr["price"].ToString() };
+                article = new Article() { ID = Convert.ToInt32(dr["id"]), Name = dr["name"].ToString(), 
+                    Description = dr["description"].ToString(), Price = dr["price"].ToString(), Year = Convert.ToInt32(dr["year"]),
+                    Type = dr["type"].ToString(), Oil = dr["oil"].ToString(), Brand = dr["brand"].ToString(), 
+                    Privod = dr["privod"].ToString(), Kpp = dr["kpp"].ToString(), Body = dr["body"].ToString()
+                };
             }
             return article;
         }

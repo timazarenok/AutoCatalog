@@ -67,22 +67,32 @@ namespace moicursach
 
         private void Confirm_Click(object sender, RoutedEventArgs e)
         {
-            int type_id = GetId(Types.SelectedItem.ToString(), "AutoTypes");
-            int oil_id = GetId(Oils.SelectedItem.ToString(), "AutoOils");
-            int brand_id = GetId(Brands.SelectedItem.ToString(), "AutoBrands");
-            int privod_id = GetId(Privods.SelectedItem.ToString(), "AutoPrivods");
-            int body_id= GetId(Bodies.SelectedItem.ToString(), "TypeBodies");
-            int kpp_id = GetId(KPP.SelectedItem.ToString(), "KPPTypes");
-
             try
             {
-                using (SqlConnection connection = new SqlConnection(mw.connectionString))
+                 if(Name.Text.Length > 0 && Description.Text.Length > 0 && Price.Text.Length > 0 && Year.Text.Length > 0 &&
+                   Types.SelectedItem != null && Oils.SelectedItem != null &&
+                   Brands.SelectedItem != null && Privods.SelectedItem != null &&
+                   Bodies.SelectedItem != null && KPP.SelectedItem != null)
+                 {
+                    int type_id = GetId(Types.SelectedItem.ToString(), "AutoTypes");
+                    int oil_id = GetId(Oils.SelectedItem.ToString(), "AutoOils");
+                    int brand_id = GetId(Brands.SelectedItem.ToString(), "AutoBrands");
+                    int privod_id = GetId(Privods.SelectedItem.ToString(), "AutoPrivods");
+                    int body_id = GetId(Bodies.SelectedItem.ToString(), "TypeBodies");
+                    int kpp_id = GetId(KPP.SelectedItem.ToString(), "KPPTypes");
+
+                    using (SqlConnection connection = new SqlConnection(mw.connectionString))
+                    {
+                        connection.Open();
+                        SqlCommand command = connection.CreateCommand();
+                        command.CommandText = $"insert into Articles values({mw.GetUserId()},{type_id},{oil_id},{brand_id},{privod_id},{kpp_id},{body_id},{Convert.ToInt32(Year.Text)}, '{Name.Text}','{Description.Text}', {ChangeComa(Price.Text)})";
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Успешно добавлено");
+                    }
+                 }
+                else
                 {
-                    connection.Open();
-                    SqlCommand command = connection.CreateCommand();
-                    command.CommandText = $"insert into Articles values({mw.GetUserId()},{type_id},{oil_id},{brand_id},{privod_id},{kpp_id},{body_id},{Convert.ToInt32(Year.Text)}, '{Name.Text}','{Description.Text}', {ChangeComa(Price.Text)})";
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Успешно добавлено");
+                    MessageBox.Show("Введите все данные");
                 }
             }
             catch (Exception error)

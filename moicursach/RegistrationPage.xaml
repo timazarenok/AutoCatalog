@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="RegistrationPage">
 
-    <Grid>
+    <Grid Background="#ffef">
         <Grid.RowDefinitions>
             <RowDefinition Height="1.5*"/>
             <RowDefinition/>
@@ -19,7 +19,7 @@
         <PasswordBox x:Name="Password" Height="20" Width="140" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,130,70,0"/>
         <Label Content="Повторите пароль" Height="25" Width="140" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,170,70,0"/>
         <PasswordBox x:Name="RepeatPassword" Grid.Row="0" Height="20" Width="140" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,210,70,0"/>
-        <Button Height="20" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,110,0" Click="ConrirmClick">Подтвердить</Button>
-        <Button Height="20" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="110,10,0,0" Click="CancelClick">Отмена</Button>
+        <Button Style="{StaticResource BlackAndWhite}"  Height="20" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,110,0" Click="ConrirmClick">Подтвердить</Button>
+        <Button Style="{StaticResource BlackAndWhite}" Height="20" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="110,10,0,0" Click="CancelClick">Отмена</Button>
     </Grid>
 </Page>

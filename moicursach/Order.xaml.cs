@@ -29,6 +29,38 @@ namespace moicursach
             mw = new MainWindow();
         }
 
+        private Article GetArticle ()
+        {
+            Article article = new Article();
+            DataTable articles = mw.Select($"select Articles.id, Articles.[name], [description], [price], [year], " +
+                $"AutoTypes.[name] as [type], AutoOils.[name] as [oil], AutoBrands.[name] as [brand], " +
+                $"AutoPrivods.[name] as [privod], KPPTypes.[name] as [kpp], TypeBodies.[name] as [body] from Articles " +
+                $"join AutoTypes on AutoTypes.id = idtype " +
+                $"join AutoOils on AutoOils.id = idoiltype " +
+                $"join AutoBrands on AutoBrands.id = idbrand " +
+                $"join AutoPrivods on AutoPrivods.id = idprivod " +
+                $"join KPPTypes on KPPTypes.id = idkpp " +
+                $"join TypeBodies on TypeBodies.id = idbody where Articles.id={IDArticle}");
+            foreach (DataRow dr in articles.Rows)
+            {
+                article = new Article()
+                {
+                    ID = Convert.ToInt32(dr["id"]),
+                    Name = dr["name"].ToString(),
+                    Description = dr["description"].ToString(),
+                    Price = dr["price"].ToString(),
+                    Year = Convert.ToInt32(dr["year"]),
+                    Type = dr["type"].ToString(),
+                    Oil = dr["oil"].ToString(),
+                    Brand = dr["brand"].ToString(),
+                    Privod = dr["privod"].ToString(),
+                    Kpp = dr["kpp"].ToString(),
+                    Body = dr["body"].ToString()
+                };
+            }
+            return article;
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -40,7 +72,8 @@ namespace moicursach
                     if (price > 0)
                     {
                         mw.Add($"insert into Orders values({UserID}, {IDArticle}, '{number}', {price})");
-                        MessageBox.Show("Заказ успешно Отправлен");
+                        Article article = GetArticle();
+                        MessageBox.Show($"Заказ успешно Отправлен \n {article.Name}, {article.Brand}, {article.Body}, {article.Price}, {article.Year}, {article.Kpp}, {article.Oil}, {article.Privod}, {article.Type}  ");
                     }
                     else
                     {

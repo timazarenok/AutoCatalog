@@ -8,7 +8,7 @@
       d:DesignHeight="350" d:DesignWidth="800"
       Title="Создание объявления">
 
-    <Grid>
+    <Grid Background="#ffef">
         <Label FontWeight="Bold" HorizontalAlignment="Center">Создание Объявления</Label>
         <Label Margin="30,10,0,0" VerticalAlignment="Top">Заголовок</Label>
         <TextBox x:Name="Name" Width="150" Height="35" Margin="0,40,600,0" VerticalAlignment="Top"/>
@@ -28,9 +28,9 @@
         <ComboBox x:Name="Bodies" VerticalAlignment="Top" Margin="500,150,200,0"/>
         <Label Margin="650,120,0,0" VerticalAlignment="Top">Тип КПП</Label>
         <ComboBox x:Name="KPP" VerticalAlignment="Top" Margin="650,150,50,0"/>
-        <Button x:Name="Confirm" Width="135" Height="35" Margin="0,250,0,0" Click="Confirm_Click">Отправить</Button>
+        <Button Style="{StaticResource BlackAndWhite}"  x:Name="Confirm" Width="135" Height="35" Margin="0,250,0,0" Click="Confirm_Click">Отправить</Button>
         <Label Margin="500,200,0,0" VerticalAlignment="Top">Год</Label>
         <TextBox x:Name="Year" Width="150" Height="35" Margin="450,230,100,0" VerticalAlignment="Top"/>
-        <Button x:Name="Back" Width="135" Height="35" Margin="0,250,300,0" Click="Back_Click">Назад</Button>
+        <Button Style="{StaticResource BlackAndWhite}"  x:Name="Back" Width="135" Height="35" Margin="0,250,300,0" Click="Back_Click">Назад</Button>
     </Grid>
 </Page>

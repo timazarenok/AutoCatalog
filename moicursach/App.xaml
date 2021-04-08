@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:moicursach"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="BlackAndWhite">
+            <Setter Property="Control.FontFamily" Value="Verdana" />
+            <Setter Property="Control.Background" Value="Black" />
+            <Setter Property="Control.Foreground" Value="#ffef" />
+            <Setter Property="Control.Margin" Value="10" />
+        </Style>
     </Application.Resources>
 </Application>

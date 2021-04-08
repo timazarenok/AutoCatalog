@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,14 +34,23 @@ namespace moicursach
             try
             {
                 int price = Convert.ToInt32(Price.Text);
-                if (price > 0)
+                string number = Number.Text;
+                if(number.Length == 16)
                 {
-                    MessageBox.Show($"{price}");
-                    mw.Add($"insert into Orders values({UserID}, {IDArticle}, {price})");
+                    if (price > 0)
+                    {
+                        mw.Add($"insert into Orders values({UserID}, {IDArticle}, '{number}', {price})");
+                        MessageBox.Show("Заказ успешно Отправлен");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Цена отрицательна");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Цена отрицательна");
+                    MessageBox.Show("Неверный номер карты");
+                    Number.Text = "";
                 }
             }
             catch(Exception err)

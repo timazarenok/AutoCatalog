@@ -10,7 +10,8 @@
         <Label FontSize="15" FontWeight="Bold" Content="Добавление категории привода" HorizontalAlignment="Center" Margin="0,5,0,0"/>
         <Label FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,0,0,0" Content="Название"/>
         <TextBox x:Name="Name" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="180,0,0,0" Width="100" Height="20"/>
-        <Button x:Name="Confirm" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="130,100,0,0" Width="100" Height="20" Click="Confirm_Click">Добавить</Button>
+        <Button x:Name="Confirm" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,100,0,0" Width="100" Height="20" Click="Confirm_Click">Добавить</Button>
+        <Button x:Name="Delete" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="200, 100,0,0" Width="100" Height="20" Click="Delete_Click">Удалить</Button>
         <DataGrid x:Name="Table" AutoGenerateColumns="True" Width="400" Margin="350, 50, 0, 20"/>
     </Grid>
 </Window>

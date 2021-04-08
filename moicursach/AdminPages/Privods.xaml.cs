@@ -57,5 +57,11 @@ namespace moicursach
                 MessageBox.Show(error.Message);
             }
         }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            mw.Add($"delete from AutoPrivods where [name] = '{Name.Text}'");
+            Table.ItemsSource = GetPrivods();
+        }
     }
 }

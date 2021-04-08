@@ -58,5 +58,11 @@ namespace moicursach.AdminPages
                 MessageBox.Show(error.Message);
             }
         }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            mw.Add($"delete from AutoBrands where [name] = '{Content.Text}'");
+            Table.ItemsSource = GetBrands();
+        }
     }
 }

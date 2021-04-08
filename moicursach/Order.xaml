@@ -8,8 +8,10 @@
         Title="Order" Height="250" Width="400">
     <Grid>
         <Label FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center">Оформление заказа</Label>
-        <Label FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,70,0,0">Предложенная цена</Label>
-        <TextBox x:Name="Price" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,100,0,0" Width="120" Height="20"/>
+        <Label FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,30,0,0">Номер карты(без пробелов)</Label>
+        <TextBox x:Name="Number" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0" Width="170" Height="20"/>
+        <Label FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,75,0,0">Предложенная цена</Label>
+        <TextBox x:Name="Price" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,105,0,0" Width="120" Height="20"/>
         <Button Width="100" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,150,0,0" Click="Button_Click">Отправить</Button>
     </Grid>
 </Window>
